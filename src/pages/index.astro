@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Tittle from '../components/Tittle.astro'
+import SocialMedia from '../components/SocialMedia.astro'
+import Inputs from '../components/Inputs.astro'
+import Button from '../components/Button.astro'
+---
+
+<Layout>
+	<div class="my-[10%] flex justify-center">
+		<Card isWhite>
+			<div class="border-b-2 mb-4">
+				<Tittle isBlackT></Tittle>
+			</div>
+			<p class="text-black font-bold uppercase text-center text-xs">with social media</p>
+			<SocialMedia isBlackI></SocialMedia>
+			<p class="text-black text-xs text-center my-4">Or</p>
+			<Inputs></Inputs>
+			<p class="my-6 text-black text-xs text-end">By sign up accept all terms & Conditions.</p>
+			<div class="flex justify-center">
+				<Button></Button>
+			</div>
+		</Card>
+		<Card>
+			<div class="border-b-2 mb-4">
+				<Tittle></Tittle>
+			</div>
+			<p class="text-white font-bold uppercase text-center text-xs">with social media</p>
+			<SocialMedia></SocialMedia>
+			<p class="text-white text-xs text-center my-4">Or</p>
+			<Inputs></Inputs>
+			<p class="my-6 text-white text-xs text-end">By sign up accept all terms & Conditions.</p>
+			<div class="flex justify-center">
+				<Button></Button>
+			</div>
+		</Card>
+	</div>
+</Layout>
+

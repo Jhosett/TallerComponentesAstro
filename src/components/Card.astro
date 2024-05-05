@@ -1,0 +1,10 @@
+---
+import { Icon } from 'astro-icon/components'
+
+const { isWhite } = Astro.props
+---
+
+<div class="bg-black w-[20%] py-12 px-10 shadow-lg"
+class:list={[{"bg-white" : isWhite}]}>
+	<slot/>
+</div>

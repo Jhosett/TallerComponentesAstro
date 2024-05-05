@@ -1,0 +1,12 @@
+---
+import { Icon } from 'astro-icon/components'
+
+const { isBlackT } = Astro.props
+---
+
+
+<div class="flex text-white items-center justify-center text-xl gap-2 mb-4"
+class:list={[{"text-black" : isBlackT}]}>
+    <Icon name="mdi:book-edit-outline" size={35} />
+    <p class="uppercase">sign up</p>
+</div>

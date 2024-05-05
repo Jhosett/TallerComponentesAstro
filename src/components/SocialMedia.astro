@@ -1,0 +1,12 @@
+---
+import { Icon } from 'astro-icon/components'
+
+const { isBlackI } = Astro.props
+---
+
+<div class="flex justify-center gap-6 text-white text-[40px]"
+class:list={[{"text-black" : isBlackI}]}>
+    <Icon name="mdi:twitter" />
+    <Icon name="mdi:facebook" />
+    <Icon name="mdi:google-plus" />
+</div>
